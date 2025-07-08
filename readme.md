@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/kan08306/">
     <img src="./assets/img/KBlogo.png" alt="Nyebe" width="130" height="100">
   </a>
   <h3 align="center">WD-Seatwork-2</h3>
@@ -52,27 +52,26 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
 Description of the project in details.
 
 Guiding Question:
 - 5 Different types of Hero Section
 - To showcase my skills on making a Hero Sedction
-- What are key components
-- HTML for the structure and CSS for the design 
+- Hero Section
+- HTML for the structure, CSS for the design and JavaScript for Functionality 
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Single Page Website
+
 
 ### Technology
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+
 
 
 
@@ -104,4 +103,6 @@ WD-Seatwork-2
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| KB HS | Different types or design of a Hero Section | https://kan08306.github.io/WD-Seatwork-2/ |
+| KB HS | Five Different types or design of a Hero Section | https://kan08306.github io/WD-Seatwork-2/ |
+| KB HS | Design Idea                                      | https://pinterest.com                     |
+| KB HS | Design Idea                                      | https://google.com                        |
