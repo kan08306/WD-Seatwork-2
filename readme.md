@@ -103,6 +103,6 @@ WD-Seatwork-2
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| KB HS | Five Different types or design of a Hero Section | https://kan08306.github io/WD-Seatwork-2/ |
+| KB HS | Five Different types or design of a Hero Section | https://kan08306.github.io/WD-Seatwork-2/ |
 | KB HS | Design Idea                                      | https://pinterest.com                     |
 | KB HS | Design Idea                                      | https://google.com                        |
