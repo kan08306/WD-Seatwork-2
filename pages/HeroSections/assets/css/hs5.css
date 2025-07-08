@@ -1,0 +1,96 @@
+.ysl-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  width: 100%;
+  gap: 3rem;
+  color: white;
+}
+
+.ysl-slide .text-content {
+  max-width: 50%;
+}
+
+.ysl-slide .text-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ysl-slide .text-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.ysl-slide .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.ysl-slide .btn {
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+}
+
+.ysl-slide .btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  max-width: 50rem;
+  animation: slideInRight 1.5s ease forwards;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 35rem;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 80%);
+  z-index: 0;
+  border-radius: 50%;
+}
+
+
+.perfume-img {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  animation: float 3s ease-in-out infinite;
+
+  /* Spotlight glow */
+  filter: drop-shadow(0 0 2rem rgba(255, 255, 255, 0.4));
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

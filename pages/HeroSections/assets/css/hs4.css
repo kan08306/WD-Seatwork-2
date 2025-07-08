@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Beth+Ellen&family=Montserrat:ital,wght@0,900;1,900&family=Notable&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+.lolbg {
+  height: 100%;
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+
+  .leftLOL {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 4rem 4rem;
+    img {
+      height: 30rem;
+      z-index: 2;
+    }
+    .diamnodShapeLol {
+      position: absolute;
+      height: 24rem;
+      width: 24rem;
+      border: 10px solid #cba188;
+      transform-origin: center;
+      transform: rotate(45deg) translate(-15%, 15%);
+      z-index: 0;
+    }
+  }
+  .rightLOL {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    line-height: 0.9;
+    .upperRightLOL {
+      font-family: "poppins", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      padding-left: 0.5rem;
+    }
+    .middleRightLOL {
+      font-family: "montserrat", sans-serif;
+      font-size: 4rem;
+      font-weight: 400;
+    }
+    .lowerRightLOL {
+      font-family: "arial", sans-serif;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .playNowLol {
+      padding: 0.4rem 1.2rem;
+      background-color: #efd6b1;
+      width: fit-content;
+      border-radius: 5px;
+      margin-top: 1rem;
+      color: black;
+      cursor: pointer;
+      &:hover {
+        background-color: #ffeacb;
+      }
+    }
+  }
+}
