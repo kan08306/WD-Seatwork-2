@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+.transparent-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 1000;
+  background-color: rgba(18, 18, 18, 0.5);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding: 0 3.75rem;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #e6007e;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.search-btn, .account-btn {
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.search-btn:hover, .account-btn:hover {
+  color: #e6007e;
+}
+
+/* Existing Hero Styles */
+.hero_box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  padding-top: 5rem; 
+}
+
+.vehicle-hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 87.5rem;
+  margin: auto;
+  gap: 5rem;
+  width: 100%;
+  padding: 0 3.75rem;
+}
+
+.vehicle-text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.vehicle-text-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.vehicle-text-content p {
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 1.875rem;
+  font-size: 1.125rem;
+}
+
+.vehicle-buttons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.vehicle-btn {
+  text-decoration: none;
+  padding: 0.875rem 1.75rem;
+  border-radius: 1.875rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.vehiclep-btn {
+  background-color: #e6007e;
+  color: white;
+}
+
+.vehiclep-btn:hover {
+  background-color: #ff3399;
+  transform: scale(1.05);
+}
+
+.vehicles-btn {
+  border: 0.0625rem solid #aaa;
+  color: #fff;
+}
+
+.vehicles-btn:hover {
+  background-color: #1e1e1e;
+  transform: scale(1.05);
+}
+
+.vehicle-image-flex {
+  display: flex;
+  gap: 0.75rem;
+  width: 40rem;
+  justify-content: space-between;
+}
+
+.vehicle-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.vehicle-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.vehicle-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.vehicle-card.vc-tall {
+  width: 100%;
+  height: 30rem;
+  border-radius: 3rem;
+}
+
+.vehicle-column:nth-child(2) .vehicle-card.vc-tall {
+  height: 37.5rem;
+}
+
+.vehicle-card.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  height: 6.25rem;
+  border-radius: 1.875rem;
+  transition: transform 0.3s ease;
+}
+
+.vehicle-card.label img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.vehicle-blue-box {
+  background-color: #2f60ff;
+}
+
+.vehicle-pink-box {
+  background-color: #d6007d;
+}
+
+.vehicle-card.vc-tall:hover img {
+  transform: scale(1.05);
+}
+
+.vehicle-card.label:hover {
+  transform: scale(1.05);
+}
+
+
+.main-footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 4rem 0 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding: 0 3.75rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.footer-section p {
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #e6007e;
+}
+
+.footer-section i {
+  margin-right: 0.5rem;
+  color: #e6007e;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #e6007e;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+  color: #aaa;
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #e6007e;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+}
+
+
