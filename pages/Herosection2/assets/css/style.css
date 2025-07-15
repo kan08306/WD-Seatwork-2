@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+
+.next-arrow {
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.next-arrow:hover {
+  color: #cba188;
+}
+
+
+
+
+
+
+.lol-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 100;
+  background: #0a0a0c;
+  font-family: 'Monsterrat', sans-serif;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.riot-icon {
+  display: flex;
+  align-items: center;
+}
+
+.riot-icon img {
+  height: 5rem;
+  width: auto;
+}
+
+.lol-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.lol-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.06rem;
+}
+
+/* HERO SECTION */
+
+.hero_box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider4_bg {
+  background-image: url("../img/lolbg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.lolbg {
+  height: 100%;
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+}
+
+.leftLOL {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4rem;
+}
+
+.leftLOL img {
+  height: 30rem;
+  z-index: 2;
+  transition: margin 0.3s ease;
+}
+
+
+#championImage.tryndamere {
+  right: 11rem;
+  transform: scale(1.1);
+}
+
+#championImage.asol {
+  right: 6.5rem;
+  bottom: 4rem;
+  transform: scale(1.2);
+}
+
+#championImage.kaisa {
+  right: 6rem;
+  transform: scale(1.2);
+}
+
+#championImage.janna {
+  right: 5rem;
+  transform: scale(1.3);
+}
+
+#championImage.mundo {
+  right: 2rem;
+  bottom: 1rem;
+  transform: scale(1.2);
+}
+
+.diamnodShapeLol {
+  position: absolute;
+  height: 24rem;
+  width: 24rem;
+  border: 0.625rem solid #cba188;
+  transform: rotate(45deg) translate(-15%, 15%);
+  transform-origin: center;
+  z-index: 0;
+}
+
+.champion-name {
+  position: absolute;
+  top: calc(50% + 20rem);
+  margin-left: -12rem;
+  font-size: 2.8rem;
+  font-style: italic;
+  font-family: "Unica One", sans-serif;
+  color: white;
+  text-align: center;
+  z-index: 3;
+}
+
+.rightLOL {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  line-height: 0.9;
+}
+
+.topTitleLOL {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.choose {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.champion {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.lowerRightLOL {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.playNowLol {
+  margin-top: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  background-color: #efd6b1;
+  width: fit-content;
+  border-radius: 0.3125rem;
+  color: black;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playNowLol:hover {
+  background-color: #ffeacb;
+}
+
+.role-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+}
+
+.role-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.role-icon img {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 0.1rem;
+}
+
+.role-icon span {
+  font-size: 0.85rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+
+
+.lol-footer {
+  background: #0a0a0c;
+  color: #8b8b8b;
+  padding: 3rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.riot-logo {
+  color: #a09b8c;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: #8b8b8b;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #5a5a5a;
+}
