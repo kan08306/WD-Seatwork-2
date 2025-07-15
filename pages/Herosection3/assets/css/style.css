@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.next-arrow {
+  font-size: 1.25rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.next-arrow:hover {
+  background: white;
+  color: #000;
+}
+
+
+
+.transparent-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sign-in {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hero_box.slider2_bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(../../assets/img/taj.png) no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem;
+  color: white;
+  overflow: hidden;
+  transition: background-image 0.6s ease-in-out;
+}
+
+.hero_box.slider2_bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.taj-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.taj-text {
+  max-width: 36rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.taj-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.taj-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 32rem;
+}
+
+.learn-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.learn-btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.card-slider {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  max-width: 52rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.card-slider:hover .card-track {
+  animation-play-state: paused;
+}
+
+.card {
+  max-width: 12rem;
+  height: 18rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: white;
+  flex-shrink: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 2rem 4rem;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: rgb(255, 255, 255);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-links ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Animations */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
