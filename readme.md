@@ -52,9 +52,9 @@
 
 ## Overview
 
-Description of the project in details.
+5 different designs of my hero sections, Hero section 2, 3, and 4 have a javascript for functionality, and the rest has html and css for design and structure. on the right theres arrows for the next page.
 
-Guiding Question:
+
 - 5 Different types of Hero Section
 - To showcase my skills on making a Hero Sedction
 - Hero Section
