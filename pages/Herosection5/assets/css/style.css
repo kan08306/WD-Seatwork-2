@@ -7,13 +7,31 @@ body {
   overflow-x: hidden;
 }
 
+.traverse {
+  height: 2svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block-end: 2rem;
+  position: relative;
+  z-index: 9999;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.traverse .fa-solid:hover {
+  color: tomato;
+}
 
 .transparent-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 0.8rem 0 1.5rem;
   z-index: 1000;
   background-color: rgba(18, 18, 18, 0.5);
   backdrop-filter: blur(10px);
@@ -60,13 +78,15 @@ body {
   gap: 1.5rem;
 }
 
-.search-btn, .account-btn {
+.search-btn,
+.account-btn {
   color: white;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
-.search-btn:hover, .account-btn:hover {
+.search-btn:hover,
+.account-btn:hover {
   color: #e6007e;
 }
 
@@ -78,7 +98,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #121212;
-  padding-top: 5rem; 
+  padding-top: 5rem;
 }
 
 .vehicle-hero-container {
@@ -222,7 +242,6 @@ body {
   transform: scale(1.05);
 }
 
-
 .main-footer {
   background-color: #1a1a1a;
   color: #fff;
@@ -336,5 +355,3 @@ body {
     transform: translateY(1.25rem);
   }
 }
-
-
