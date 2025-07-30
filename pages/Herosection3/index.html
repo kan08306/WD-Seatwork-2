@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Herosection4/assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <title>Hero Section 4</title>
+    <title>Hero Section 3</title>
+    <link rel="stylesheet" href="../Herosection3/assets/css/style.css" />
   </head>
   <body>
     <header class="transparent-header">
@@ -24,62 +20,132 @@
           ></a>
         </div>
         <div>
-          <a href="../Herosection5/index.html" title="next"
+          <a href="../Herosection4/index.html" title="next"
             ><i class="fa-solid fa-forward"></i
           ></a>
         </div>
       </div>
       <div class="header-content">
-        <h1 class="logo">CAR SHOWCASE</h1>
+        <div class="logo">World Wonders</div>
         <nav class="main-nav">
-          <a href="#">Home</a>
-          <a href="#">Gallery</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
-        <div></div>
+        <div class="header-actions">
+          <div></div>
+        </div>
       </div>
     </header>
 
-    <div class="car-container">
-      <div class="car-hero-bg" id="car-bg"></div>
-      <div class="arrow left" onclick="prevCar()">&#10094;</div>
-      <img
-        id="car-image"
-        src="../Herosection4/assets/img/GTR.png"
-        class="car-image"
-      />
-      <div class="car-info" id="car-info">
-        <h1 id="car-name">Nissan Skyline GT-R</h1>
-        <div class="car-stats">
-          <div class="stat-item">
-            <span class="label">Horsepower</span>
-            <span class="value" id="car-hp">565 HP</span>
-          </div>
-          <div class="stat-item">
-            <span class="label">Torque</span>
-            <span class="value" id="car-tq">467 lb-ft</span>
-          </div>
-          <div class="stat-item">
-            <span class="label">0–60 mph</span>
-            <span class="value" id="car-accel">2.9</span>
+    <div class="hero_box slider2_bg">
+      <div class="taj-container">
+        <div class="taj-text">
+          <p class="location" id="location-text">
+            <i class="fas fa-map-marker-alt"></i> AGRA, INDIA
+          </p>
+          <h1 class="taj-title" id="title-text">TAJ MAHAL</h1>
+          <p class="taj-description" id="description-text">
+            A stunning masterpiece built from white marble as a symbol of love
+            for Mumtaz Mahal. The Taj Mahal is one of the world's most
+            celebrated monuments and recognized by UNESCO.
+          </p>
+          <button class="learn-btn">Book Now!</button>
+        </div>
+
+        <div class="card-slider">
+          <div class="card-track">
+            <div
+              class="card"
+              data-place="Rio de Janeiro, Brazil"
+              data-title="Christ the Redeemer"
+              data-description="A symbol of peace overlooking Rio, Brazil."
+            >
+              <img
+                src="../Herosection3/assets/img/chri.jpg"
+                alt="Christ the Redeemer"
+              />
+            </div>
+            <div
+              class="card"
+              data-place="Chichén Itzá, Mexico"
+              data-title="Chichen Itza"
+              data-description="A large pre-Columbian archaeological site built by the Maya."
+            >
+              <img
+                src="../Herosection3/assets/img/itza.jpg"
+                alt="Chichen Itza"
+              />
+            </div>
+            <div
+              class="card"
+              data-place="Petra, Jordan"
+              data-title="Petra"
+              data-description="A historical and archaeological city famous for its rock-cut architecture."
+            >
+              <img src="../Herosection3/assets/img/ptera.jpg" alt="Petra" />
+            </div>
+            <div
+              class="card"
+              data-place="Giza, Egypt"
+              data-title="Pyramids of Giza"
+              data-description="Iconic ancient structures built by the Egyptians."
+            >
+              <img
+                src="../Herosection3/assets/img/pyramid.jpg"
+                alt="Pyramids of Giza"
+              />
+            </div>
+            <div
+              class="card"
+              data-place="China"
+              data-title="Great Wall of China"
+              data-description="A vast wall built across historical northern borders of China."
+            >
+              <img src="../Herosection3/assets/img/wall.jpg" alt="Great Wall" />
+            </div>
+            <div
+              class="card"
+              data-place="Rome, Italy"
+              data-title="Colosseum"
+              data-description="A massive amphitheatre in the center of Rome."
+            >
+              <img src="../Herosection3/assets/img/col.jpg" alt="Colosseum" />
+            </div>
           </div>
         </div>
-        <button class="btn">Bid</button>
       </div>
-      <div class="arrow right" onclick="nextCar()">&#10095;</div>
     </div>
 
-    <footer class="simple-footer">
+    <footer class="site-footer">
       <div class="footer-content">
-        <p>&copy; 2023 Car Showcase. All rights reserved.</p>
+        <div class="footer-logo">World Wonders</div>
         <div class="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 World Wonders. All rights reserved.</p>
+      </div>
     </footer>
-
-    <script src="../Herosection4/assets/js/script.js"></script>
+    <script src="../Herosection3/assets/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </body>
 </html>
